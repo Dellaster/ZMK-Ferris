@@ -65,10 +65,10 @@
 
         default_layer {
             bindings = <
-&kp SQT      &mt QMARK COMMA  &mt EXCL DOT  &kp P       &kp Y          &kp F        &kp G        &kp C        &kp R        &kp L
-&lh LCTRL A  &lh LSHFT O      &lh LMETA E   &lh LALT U  &lh LC(C) I    &rh LC(V) D  &rh LALT H   &rh RMETA T  &rh RSHFT N  &rh RCTRL S
-&kp MINUS    &kp Q            &kp J         &kp K       &kp X          &kp B        &kp M        &kp W        &kp V        &kp Z
-                                            &lt 1 BSPC  &kp ESC        &kp ENTER    &lt 2 SPACE
+&kp SQT      &mt QMARK COMMA  &mt EXCL DOT  &kp P       &kp Y           &kp F         &kp G        &kp C        &kp R        &kp L
+&lh LCTRL A  &lh LSHFT O      &lh LMETA E   &lh LALT U  &lh LC(C) I     &rh LC(V) D   &rh LALT H   &rh RMETA T  &rh RSHFT N  &rh RCTRL S
+&kp MINUS    &kp Q            &kp J         &kp K       &kp X           &kp B         &kp M        &kp W        &kp V        &kp Z
+                                            &lt 1 BSPC  &lt 4 ESCAPE    &lt 4 RETURN  &lt 2 SPACE
             >;
         };
 
@@ -96,6 +96,15 @@
 &lh LCTRL K_PREV  &lh LSHFT K_NEXT  &lh LMETA K_VOLUME_DOWN  &lh LALT SPACE  &kp C_BRI_DN    &bt BT_SEL 1  &kp F4  &kp F5  &kp F6  &kp F11
 &bt BT_PRV        &bt BT_CLR        &out OUT_TOG             &bt BT_NXT      &bootloader     &bt BT_SEL 0  &kp F1  &kp F2  &kp F3  &kp F10
                                                              &none           &none           &none         &none
+            >;
+        };
+
+        SHIFT {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans    &trans  &trans
             >;
         };
 

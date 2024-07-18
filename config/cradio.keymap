@@ -65,10 +65,10 @@
 
         default_layer {
             bindings = <
-&kp SQT      &mt QMARK COMMA  &mt EXCL DOT  &kp P       &kp Y         &kp F       &kp G        &kp C        &kp R        &kp L
-&lh LCTRL A  &lh LSHFT O      &lh LMETA E   &lh LALT U  &lh RALT I    &rh RALT D  &rh LALT H   &rh RMETA T  &rh RSHFT N  &rh RCTRL S
-&kp MINUS    &kp Q            &kp J         &kp K       &kp X         &kp B       &kp M        &kp W        &kp V        &kp Z
-                                            &lt 1 BSPC  &kp ESC       &kp ENTER   &lt 2 SPACE
+&kp SQT      &mt QMARK COMMA  &mt EXCL DOT  &kp P       &kp Y          &kp F        &kp G        &kp C        &kp R        &kp L
+&lh LCTRL A  &lh LSHFT O      &lh LMETA E   &lh LALT U  &lh LC(C) I    &rh LC(V) D  &rh LALT H   &rh RMETA T  &rh RSHFT N  &rh RCTRL S
+&kp MINUS    &kp Q            &kp J         &kp K       &kp X          &kp B        &kp M        &kp W        &kp V        &kp Z
+                                            &lt 1 BSPC  &kp ESC        &kp ENTER    &lt 2 SPACE
             >;
         };
 
@@ -77,16 +77,16 @@
 &none      &none           &none            &none     &none              &kp PSCRN      &none          &kp PG_UP       &kp INS       &none
 &kp LCTRL  &lh LSHFT SLCK  &lh LMETA PG_DN  &kp LALT  &lh RALT END       &lh RALT HOME  &lh LALT LEFT  &lh RMETA DOWN  &lh RSHFT UP  &lh RCTRL RIGHT
 &none      &kp DEL         &kp CLCK         &none     &kp PAUSE_BREAK    &none          &kp LNLCK      &kp K_CMENU     &none         &none
-                                            &none     &kp TAB          &none          &none
+                                            &none     &none              &none          &none
             >;
         };
 
         sym_layer {
             bindings = <
-&kp LBRC         &kp RBRC         &kp LPAR         &kp RPAR       &none            &none     &kp N7       &kp N8        &kp N9        &kp RA(W)
-&lh LCTRL GRAVE  &lh LSHFT MINUS  &lh LMETA EQUAL  &lh LALT APOS  &lh RALT BSLH    &none     &rh LALT N4  &rh RMETA N5  &rh RSHFT N6  &kp RA(L)
-&kp LT           &kp GT           &kp LBKT         &kp RBKT       &none            &none     &kp N1       &kp N2        &kp N3        &kp RA(Z)
-                                                   &none          &none            &none     &none
+&kp LBRC         &kp RBRC         &kp LPAR         &kp RPAR       &none            &none  &kp N7       &kp N8        &kp N9        &kp RA(W)
+&lh LCTRL GRAVE  &lh LSHFT MINUS  &lh LMETA EQUAL  &lh LALT APOS  &lh RALT BSLH    &none  &rh LALT N4  &rh RMETA N5  &rh RSHFT N6  &kp RA(L)
+&kp LT           &kp GT           &kp LBKT         &kp RBKT       &none            &none  &kp N1       &kp N2        &kp N3        &kp RA(Z)
+                                                   &none          &none            &none  &none
             >;
         };
 
@@ -101,11 +101,11 @@
 
         // fun_layer_right {
         //     bindings = <
-// &none  &none  &none  &none  &none    &none        &sys_reset  &none         &none       &none
-// &none  &none  &none  &none  &none    &none        &none       &none         &none       &none
-// &none  &none  &none  &none  &none    &bootloader  &bt BT_NXT  &out OUT_TOG  &bt BT_CLR  &bt BT_PRV
-//                      &none  &none    &none        &none
-//             >;
-//         };
+        // &none  &none  &none  &none  &none    &none        &sys_reset  &none         &none       &none
+        // &none  &none  &none  &none  &none    &none        &none       &none         &none       &none
+        // &none  &none  &none  &none  &none    &bootloader  &bt BT_NXT  &out OUT_TOG  &bt BT_CLR  &bt BT_PRV
+        //                      &none  &none    &none        &none
+        //             >;
+        //         };
     };
 };

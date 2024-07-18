@@ -1,6 +1,6 @@
 Yet another ZMK Ferris Sweep config I'm testing out. Work in progress.
 
-![image](https://github.com/user-attachments/assets/55640a1a-ef51-4ab7-b02c-be1bb480c904)
+![image](https://github.com/user-attachments/assets/b58e960e-6226-466b-98d2-cc67d8237edf)
 
 These two web tools are a great help:
 Keymap Editor by Nick Coutsos https://nickcoutsos.github.io/keymap-editor/

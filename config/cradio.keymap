@@ -68,7 +68,7 @@
 &none      &none           &none            &none     &none              &kp PSCRN      &none          &kp PG_UP       &kp INS       &none
 &kp LCTRL  &lh LSHFT SLCK  &lh LMETA PG_DN  &kp LALT  &lh RALT END       &lh RALT HOME  &lh LALT LEFT  &lh RMETA DOWN  &lh RSHFT UP  &lh RCTRL RIGHT
 &none      &kp DEL         &kp CLCK         &none     &kp PAUSE_BREAK    &none          &kp LNLCK      &kp K_CMENU     &none         &none
-                                            &none     &mt 3 TAB          &none          &mo 4
+                                            &none     &kp TAB          &none          &none
             >;
         };
 
@@ -77,7 +77,7 @@
 &kp LBRC         &kp RBRC         &kp LPAR         &kp RPAR       &none            &none     &kp N7       &kp N8        &kp N9        &kp RA(W)
 &lh LCTRL GRAVE  &lh LSHFT MINUS  &lh LMETA EQUAL  &lh LALT APOS  &lh RALT BSLH    &none     &rh LALT N4  &rh RMETA N5  &rh RSHFT N6  &kp RA(L)
 &kp LT           &kp GT           &kp LBKT         &kp RBKT       &none            &none     &kp N1       &kp N2        &kp N3        &kp RA(Z)
-                                                   &mo 3          &none            &mt 3 N0  &none
+                                                   &none          &none            &none     &none
             >;
         };
 
@@ -90,13 +90,13 @@
             >;
         };
 
-        fun_layer_right {
-            bindings = <
-&none  &none  &none  &none  &none    &none        &sys_reset  &none         &none       &none
-&none  &none  &none  &none  &none    &none        &none       &none         &none       &none
-&none  &none  &none  &none  &none    &bootloader  &bt BT_NXT  &out OUT_TOG  &bt BT_CLR  &bt BT_PRV
-                     &none  &none    &none        &none
-            >;
-        };
+        // fun_layer_right {
+        //     bindings = <
+// &none  &none  &none  &none  &none    &none        &sys_reset  &none         &none       &none
+// &none  &none  &none  &none  &none    &none        &none       &none         &none       &none
+// &none  &none  &none  &none  &none    &bootloader  &bt BT_NXT  &out OUT_TOG  &bt BT_CLR  &bt BT_PRV
+//                      &none  &none    &none        &none
+//             >;
+//         };
     };
 };

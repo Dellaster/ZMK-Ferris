@@ -83,19 +83,19 @@
 
         sym_layer {
             bindings = <
-&kp LBRC         &kp RBRC         &kp LPAR         &kp RPAR       &none       &none     &kp N7       &kp N8        &kp N9        &kp RA(W)
-&lh LCTRL GRAVE  &lh LSHFT MINUS  &lh LMETA EQUAL  &lh LALT APOS  &kp BSLH    &kp FSLH  &rh LALT N4  &rh RMETA N5  &rh RSHFT N6  &kp RA(L)
-&kp LT           &kp GT           &kp LBKT         &kp RBKT       &none       &none     &kp N1       &kp N2        &kp N3        &kp RA(Z)
-                                                   &none          &none       &none     &none
+&kp LBRC         &kp RBRC         &kp LPAR         &kp RPAR       &none       &none            &kp N7       &kp N8        &kp N9        &kp RA(W)
+&lh LCTRL GRAVE  &lh LSHFT MINUS  &lh LMETA EQUAL  &lh LALT APOS  &kp BSLH    &kp FSLH         &rh LALT N4  &rh RMETA N5  &rh RSHFT N6  &kp RA(L)
+&kp LT           &kp GT           &kp LBKT         &kp RBKT       &none       &kp KP_NUMBER_0  &kp N1       &kp N2        &kp N3        &kp RA(Z)
+                                                   &none          &none       &none            &none
             >;
         };
 
         fun_layer {
             bindings = <
-&kp K_PLAY_PAUSE  &kp K_MUTE          &none               &sys_reset       &kp C_BRI_UP    &bt BT_SEL 2  &kp F7  &kp F8  &kp F9  &kp F12
-&lh LCTRL K_PREV  &lh LSHFT K_VOL_DN  &lh LMETA K_VOL_UP  &lh LALT K_NEXT  &kp C_BRI_DN    &bt BT_SEL 1  &kp F4  &kp F5  &kp F6  &kp F11
-&bt BT_PRV        &bt BT_CLR          &out OUT_TOG        &bt BT_NXT       &bootloader     &bt BT_SEL 0  &kp F1  &kp F2  &kp F3  &kp F10
-                                                          &none            &none           &none         &none
+&kp K_PLAY_PAUSE  &kp K_MUTE        &kp C_VOLUME_UP          &sys_reset      &kp C_BRI_UP    &bt BT_SEL 2  &kp F7  &kp F8  &kp F9  &kp F12
+&lh LCTRL K_PREV  &lh LSHFT K_NEXT  &lh LMETA K_VOLUME_DOWN  &lh LALT SPACE  &kp C_BRI_DN    &bt BT_SEL 1  &kp F4  &kp F5  &kp F6  &kp F11
+&bt BT_PRV        &bt BT_CLR        &out OUT_TOG             &bt BT_NXT      &bootloader     &bt BT_SEL 0  &kp F1  &kp F2  &kp F3  &kp F10
+                                                             &none           &none           &none         &none
             >;
         };
 

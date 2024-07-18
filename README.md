@@ -1,6 +1,6 @@
-Yet another ZMK Ferris Sweep config I'm testing out. Work in progress, but pretty much done until my Ferris Sweep Bling arrives and I can see how it works..
+Yet another ZMK Ferris Sweep config I'm testing out. Work in progress.
 
-![image](https://github.com/user-attachments/assets/c9f25183-f99f-4a3d-ada5-f12c9d3e3ecc)
+![image](https://github.com/user-attachments/assets/55640a1a-ef51-4ab7-b02c-be1bb480c904)
 
 These two web tools are a great help:
 Keymap Editor by Nick Coutsos https://nickcoutsos.github.io/keymap-editor/

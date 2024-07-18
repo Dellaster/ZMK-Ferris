@@ -83,10 +83,10 @@
 
         sym_layer {
             bindings = <
-&kp LBRC         &kp RBRC         &kp LPAR         &kp RPAR       &none            &none  &kp N7       &kp N8        &kp N9        &kp RA(W)
-&lh LCTRL GRAVE  &lh LSHFT MINUS  &lh LMETA EQUAL  &lh LALT APOS  &lh RALT BSLH    &none  &rh LALT N4  &rh RMETA N5  &rh RSHFT N6  &kp RA(L)
-&kp LT           &kp GT           &kp LBKT         &kp RBKT       &none            &none  &kp N1       &kp N2        &kp N3        &kp RA(Z)
-                                                   &none          &none            &none  &none
+&kp LBRC         &kp RBRC         &kp LPAR         &kp RPAR       &none       &none     &kp N7       &kp N8        &kp N9        &kp RA(W)
+&lh LCTRL GRAVE  &lh LSHFT MINUS  &lh LMETA EQUAL  &lh LALT APOS  &kp BSLH    &kp FSLH  &rh LALT N4  &rh RMETA N5  &rh RSHFT N6  &kp RA(L)
+&kp LT           &kp GT           &kp LBKT         &kp RBKT       &none       &none     &kp N1       &kp N2        &kp N3        &kp RA(Z)
+                                                   &none          &none       &none     &none
             >;
         };
 

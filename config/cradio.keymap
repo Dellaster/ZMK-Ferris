@@ -101,10 +101,10 @@
 
         SHIFT {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans    &trans  &trans
+&kp LS(B)  &kp LS(L)  &kp LS(D)  &kp LS(W)  &kp LS(Z)    &kp ASTRK  &kp LS(F)  &kp LS(O)  &kp LS(U)          &kp LS(J)
+&kp LS(N)  &kp LS(R)  &kp LS(T)  &kp LS(S)  &kp LS(G)    &kp LS(Y)  &kp LS(H)  &kp LS(A)  &kp LS(E)          &kp LS(I)
+&kp LS(Q)  &kp LS(X)  &kp LS(M)  &kp LS(C)  &kp LS(V)    &kp LS(K)  &kp LS(P)  &kp EXCL   &kp DOUBLE_QUOTES  &kp QUESTION
+                                 &trans     &trans       &trans     &trans
             >;
         };
     };

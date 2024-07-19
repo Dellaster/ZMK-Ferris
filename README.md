@@ -1,4 +1,4 @@
-Yet another ZMK Ferris Sweep config I'm testing out. Work in progress.
+Yet another ZMK Ferris Sweep config I'm testing out. Work in progress. Layout decision pending.
 
 ![image](https://github.com/user-attachments/assets/b58e960e-6226-466b-98d2-cc67d8237edf)
 

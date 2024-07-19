@@ -65,28 +65,28 @@
 
         default_layer {
             bindings = <
-&kp B  &kp L               &kp D        &kp W       &kp Z           &kp SQT       &kp F        &kp O        &kp U                &kp J
-&kp N  &lh LEFT_CONTROL R  &lh LMETA T  &lh LALT S  &kp G           &kp Y         &rh LALT H   &rh RMETA A  &rh RIGHT_CONTROL E  &kp I
-&kp Q  &kp X               &kp M        &kp C       &kp V           &kp K         &kp P        &kp PERIOD   &kp MINUS            &kp COMMA
+&kp P  &kp L               &kp D        &kp G       &kp V           &kp COMMA     &kp F        &kp O        &kp SQT              &kp Y
+&kp N  &lh LEFT_CONTROL R  &lh LMETA T  &lh LALT S  &kp B           &kp PERIOD    &rh LALT U   &rh RMETA A  &rh RIGHT_CONTROL E  &kp I
+&kp Z  &kp X               &kp M        &kp C       &kp W           &kp K         &kp H        &kp Q        &kp MINUS            &kp J
                                         &lt 1 BSPC  &lt 4 ESCAPE    &lt 4 RETURN  &lt 2 SPACE
             >;
         };
 
         nav_layer {
             bindings = <
-&none      &none           &none            &none     &none              &kp PSCRN  &none          &kp PG_UP       &kp INS       &none
-&kp LCTRL  &lh LSHFT SLCK  &lh LMETA PG_DN  &kp LALT  &kp END            &kp HOME   &lh LALT LEFT  &lh RMETA DOWN  &lh RSHFT UP  &lh RCTRL RIGHT
-&none      &kp DEL         &kp CLCK         &none     &kp PAUSE_BREAK    &none      &kp LNLCK      &kp K_CMENU     &none         &none
-                                            &none     &none              &none      &none
+&none  &none           &none            &none     &none              &kp PSCRN  &none          &kp PG_UP       &kp INS       &none
+&none  &lh LCTRL SLCK  &lh LMETA PG_DN  &kp LALT  &kp END            &kp HOME   &lh LALT LEFT  &lh RMETA DOWN  &lh RCTRL UP  &kp RIGHT_ARROW
+&none  &kp DEL         &kp CLCK         &none     &kp PAUSE_BREAK    &none      &kp LNLCK      &kp K_CMENU     &none         &none
+                                        &none     &kp LEFT_SHIFT     &kp RSHFT  &none
             >;
         };
 
         sym_layer {
             bindings = <
-&kp LBRC         &kp RBRC         &kp LPAR         &kp RPAR       &none       &none            &kp N7       &kp N8        &kp N9        &kp RA(W)
-&lh LCTRL GRAVE  &lh LSHFT MINUS  &lh LMETA EQUAL  &lh LALT APOS  &kp BSLH    &kp FSLH         &rh LALT N4  &rh RMETA N5  &rh RSHFT N6  &kp RA(L)
-&kp LT           &kp GT           &kp LBKT         &kp RBKT       &none       &kp KP_NUMBER_0  &kp N1       &kp N2        &kp N3        &kp RA(Z)
-                                                   &none          &none       &none            &none
+&kp LBRC   &kp RBRC         &kp LPAR         &kp RPAR       &none         &none            &kp N7       &kp N8        &kp N9        &kp RA(W)
+&kp GRAVE  &lh LCTRL MINUS  &lh LMETA EQUAL  &lh LALT APOS  &kp BSLH      &kp FSLH         &rh LALT N4  &rh RMETA N5  &rh RCTRL N6  &kp RA(L)
+&kp LT     &kp GT           &kp LBKT         &kp RBKT       &none         &kp KP_NUMBER_0  &kp N1       &kp N2        &kp N3        &kp RA(Z)
+                                             &none          &kp LSHIFT    &kp RSHFT        &none
             >;
         };
 
@@ -95,16 +95,16 @@
 &kp K_PLAY_PAUSE  &kp K_MUTE        &kp C_VOLUME_UP          &sys_reset      &kp C_BRI_UP    &bt BT_SEL 2  &kp F7  &kp F8  &kp F9  &kp F12
 &lh LCTRL K_PREV  &lh LSHFT K_NEXT  &lh LMETA K_VOLUME_DOWN  &lh LALT SPACE  &kp C_BRI_DN    &bt BT_SEL 1  &kp F4  &kp F5  &kp F6  &kp F11
 &bt BT_PRV        &bt BT_CLR        &out OUT_TOG             &bt BT_NXT      &bootloader     &bt BT_SEL 0  &kp F1  &kp F2  &kp F3  &kp F10
-                                                             &none           &none           &none         &none
+                                                             &none           &kp LSHIFT      &kp RSHFT     &none
             >;
         };
 
         SHIFT {
             bindings = <
-&kp LS(B)  &kp LS(L)  &kp LS(D)  &kp LS(W)  &kp LS(Z)    &kp ASTRK  &kp LS(F)  &kp LS(O)  &kp LS(U)          &kp LS(J)
-&kp LS(N)  &kp LS(R)  &kp LS(T)  &kp LS(S)  &kp LS(G)    &kp LS(Y)  &kp LS(H)  &kp LS(A)  &kp LS(E)          &kp LS(I)
-&kp LS(Q)  &kp LS(X)  &kp LS(M)  &kp LS(C)  &kp LS(V)    &kp LS(K)  &kp LS(P)  &kp EXCL   &kp DOUBLE_QUOTES  &kp QUESTION
-                                 &trans     &trans       &trans     &trans
+&kp LS(P)  &kp LS(L)  &kp LS(D)  &kp LS(G)  &kp LS(V)    &kp QUESTION  &kp LS(F)  &kp LS(O)  &kp DOUBLE_QUOTES  &kp LS(Y)
+&kp LS(N)  &kp LS(R)  &kp LS(T)  &kp LS(S)  &kp LS(B)    &kp EXCL      &kp LS(U)  &kp LS(A)  &kp LS(E)          &kp LS(I)
+&kp LS(Z)  &kp LS(X)  &kp LS(M)  &kp LS(C)  &kp LS(W)    &kp LS(K)     &kp LS(H)  &kp LS(Q)  &kp ASTRK          &kp LS(J)
+                                 &trans     &trans       &trans        &trans
             >;
         };
     };

@@ -1,6 +1,6 @@
-Yet another ZMK Ferris Sweep config I'm testing out. Work in progress. Layout is Aptmak: https://github.com/Apsu/aptmak
+Yet another ZMK Ferris Sweep config I'm testing out. Work in progress. Layout is Hands Down Vibranium (an  earlier one, apparently, with all the letters staying within a 10x3 layout): https://cyanophage.github.io/index.html#handsdown-vibranium
 
-![image](https://github.com/user-attachments/assets/f5637cff-a267-4701-9a89-8144fd99ce43)
+![image](https://github.com/user-attachments/assets/88c9987e-8197-4cd9-896b-9bbbeba63e51)
 
 These two web tools are a great help:
 

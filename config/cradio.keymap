@@ -50,28 +50,37 @@
             hold-trigger-key-positions = <0 1 2 3 4>;
         };
 
-        starhash: starhash {
+        star_hash: star_hash {
             compatible = "zmk,behavior-mod-morph";
-            label = "STARHASH";
+            label = "STAR_HASH";
             bindings = <&kp ASTERISK>, <&kp HASH>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        dotexc: dotexc {
+        dot_exc: dot_exc {
             compatible = "zmk,behavior-mod-morph";
-            label = "DOTEXC";
+            label = "DOT_EXC";
             bindings = <&kp PERIOD>, <&kp EXCLAMATION>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        commaques: commaques {
+        comma_ques: comma_ques {
             compatible = "zmk,behavior-mod-morph";
-            label = "COMMAQUES";
+            label = "COMMA_QUES";
             bindings = <&kp COMMA>, <&kp QUESTION>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        dash_at: dash_at {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DASH_AT";
+            bindings = <&kp MINUS>, <&kp AT_SIGN>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -111,10 +120,10 @@
 
         default_layer {
             bindings = <
-&kp X  &kp W               &kp M           &kp G         &kp Q            &kp Z       &dotexc      &kp SQT          &kp J                &kp B
-&kp S  &lh LEFT_CONTROL C  &lh LEFT_ALT N  &lh LSHIFT T  &kp K            &commaques  &rh RSHFT A  &rh RIGHT_ALT E  &rh RIGHT_CONTROL I  &kp H
-&kp V  &kp P               &kp L           &kp D         &starhash        &kp MINUS   &kp U        &kp O            &kp Y                &kp F
-                                           &lt 1 R       &kp BACKSPACE    &kp ENTER   &lt 2 SPACE
+&kp X  &kp W               &kp M           &kp G         &kp Q            &kp Z        &dot_exc     &kp SQT          &kp J                &kp B
+&kp S  &lh LEFT_CONTROL C  &lh LEFT_ALT N  &lh LSHIFT T  &kp K            &comma_ques  &rh RSHFT A  &rh RIGHT_ALT E  &rh RIGHT_CONTROL I  &kp H
+&kp V  &kp P               &kp L           &kp D         &star_hash       &dash_at     &kp U        &kp O            &kp Y                &kp F
+                                           &lt 1 R       &kp BACKSPACE    &kp ENTER    &lt 2 SPACE
             >;
         };
 

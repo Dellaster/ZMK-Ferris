@@ -58,6 +58,24 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        dotexc: dotexc {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOTEXC";
+            bindings = <&kp PERIOD>, <&kp EXCLAMATION>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        commaques: commaques {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMAQUES";
+            bindings = <&kp COMMA>, <&kp QUESTION>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     conditional_layers {
@@ -93,10 +111,10 @@
 
         default_layer {
             bindings = <
-&kp X  &kp W               &kp M           &kp G         &kp Q            &kp Z      &kp PERIOD   &kp SQT          &kp J                &kp B
-&kp S  &lh LEFT_CONTROL C  &lh LEFT_ALT N  &lh LSHIFT T  &kp K            &kp COMMA  &rh RSHFT A  &rh RIGHT_ALT E  &rh RIGHT_CONTROL I  &kp H
-&kp V  &kp P               &kp L           &kp D         &starhash        &kp MINUS  &kp U        &kp O            &kp Y                &kp F
-                                           &lt 1 R       &kp BACKSPACE    &kp ENTER  &lt 2 SPACE
+&kp X  &kp W               &kp M           &kp G         &kp Q            &kp Z       &dotexc      &kp SQT          &kp J                &kp B
+&kp S  &lh LEFT_CONTROL C  &lh LEFT_ALT N  &lh LSHIFT T  &kp K            &commaques  &rh RSHFT A  &rh RIGHT_ALT E  &rh RIGHT_CONTROL I  &kp H
+&kp V  &kp P               &kp L           &kp D         &starhash        &kp MINUS   &kp U        &kp O            &kp Y                &kp F
+                                           &lt 1 R       &kp BACKSPACE    &kp ENTER   &lt 2 SPACE
             >;
         };
 

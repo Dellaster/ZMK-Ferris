@@ -1,6 +1,6 @@
 Yet another ZMK Ferris Sweep config I'm testing out. Work in progress. Layout is a version of Hands Down Vibranium: https://cyanophage.github.io/index.html#handsdown-vibranium
 
-![image](https://github.com/user-attachments/assets/47a48dd2-92f8-47a9-85c4-3a413d95c08e)
+![image](https://github.com/user-attachments/assets/c6e5a842-e345-4d08-bea9-ef232b887ad4)
 
 These two web tools are a great help:
 

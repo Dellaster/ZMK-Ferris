@@ -17,12 +17,12 @@
 / {
     behaviors {
         as_ht: autoshift_hold_tap {
-        compatible = "zmk,behavior-hold-tap";
-        label = "AUTOSHIFT_HOLD_TAP";
-        #binding-cells = <2>;
-        tapping-term-ms = <200>;
-        bindings = <&shifted>, <&kp>;
-      };
+            compatible = "zmk,behavior-hold-tap";
+            label = "AUTOSHIFT_HOLD_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            bindings = <&shifted>, <&kp>;
+        };
 
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -123,40 +123,39 @@
         };
     };
 
-   macros {
-    shifted: macro_shifted_kp {
-      #binding-cells = <1>;
-      label = "MACRO_SHIFTED_KP";
-      compatible = "zmk,behavior-macro-one-param";
-      bindings =
-        <&macro_press &kp LSHFT>,
-        <&macro_param_1to1 &macro_tap &kp MACRO_PLACEHOLDER>,
-        <&macro_release &kp LSHFT>;
-    };
+    macros {
+        shifted: macro_shifted_kp {
+            #binding-cells = <1>;
+            label = "MACRO_SHIFTED_KP";
+            compatible = "zmk,behavior-macro-one-param";
+            bindings =
+                <&macro_press>,
+                <&kp LSHFT &macro_param_1to1>,
+                <&macro_tap>,
+                <&kp MACRO_PLACEHOLDER>,
+                <&macro_release>,
+                <&kp LSHFT>;
+        };
 
-    as: autoshift {
-      compatible = "zmk,behavior-macro-one-param";
-      #binding-cells = <1>;
-      label = "AUTOSHIFT_KP";
-      bindings =
-        <&macro_press>,
-        <&macro_param_1to1>,
-        <&macro_param_1to2>,
-        <&as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>,
-        <&macro_pause_for_release>,
-        <&macro_release>,
-        <&macro_param_1to1>,
-        <&macro_param_1to2>,
-        <&as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
+        as: autoshift {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            label = "AUTOSHIFT_KP";
+            bindings =
+                <&macro_press>,
+                <&macro_param_1to1 &macro_param_1to2 &as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&macro_param_1to1 &macro_param_1to2 &as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
+        };
     };
-  };
 
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&kp X  &kp W               &kp M           &kp G         &kp Q            &kp Z        &dot_exc     &kp SQT          &kp J                &kp B
+&as X  &kp W               &kp M           &kp G         &kp Q            &kp Z        &dot_exc     &kp SQT          &kp J                &kp B
 &kp S  &lh LEFT_CONTROL C  &lh LEFT_ALT N  &lh LSHIFT T  &kp K            &comma_ques  &rh RSHFT A  &rh RIGHT_ALT E  &rh RIGHT_CONTROL I  &kp H
 &kp V  &kp P               &kp L           &kp D         &star_hash       &dash_at     &kp U        &kp O            &kp Y                &kp F
                                            &lt 1 R       &kp BACKSPACE    &kp ENTER    &lt 2 SPACE

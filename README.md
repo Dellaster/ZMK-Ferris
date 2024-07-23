@@ -1,6 +1,7 @@
-Yet another ZMK Ferris Sweep config I'm testing out. Work in progress. Layout is a version of Hands Down Vibranium: https://cyanophage.github.io/index.html#handsdown-vibranium
+Yet another ZMK Ferris Sweep Bling config I'm testing out. Work in progress. Layout is a version of SNTH with tweaked default symbols: https://www.reddit.com/r/KeyboardLayouts/comments/18jefux/snth/
 
-![image](https://github.com/user-attachments/assets/89070384-4b7e-462b-9b55-c170624575d4)
+![image](https://github.com/user-attachments/assets/a4a4f20c-f6ab-44d4-8021-8000ed8d77c0)
+
 
 These two web tools are a great help:
 

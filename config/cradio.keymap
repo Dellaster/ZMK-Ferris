@@ -85,6 +85,24 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        apos_star: apos_star {
+            compatible = "zmk,behavior-mod-morph";
+            label = "APOS_STAR";
+            bindings = <&kp SQT>, <&kp ASTERISK>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        quo_hash: quo_hash {
+            compatible = "zmk,behavior-mod-morph";
+            label = "QUO_HASH";
+            bindings = <&kp DOUBLE_QUOTES>, <&kp HASH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     conditional_layers {
@@ -103,6 +121,16 @@
             bindings = <&kp ESCAPE>;
             key-positions = <1 0>;
         };
+
+        combo_bootleft {
+            bindings = <&bootloader>;
+            key-positions = <3 4>;
+        };
+
+        combo_bootright {
+            bindings = <&bootloader>;
+            key-positions = <6 5>;
+        };
     };
 
     keymap {
@@ -110,9 +138,9 @@
 
         default_layer {
             bindings = <
-&kp X  &kp P  &kp D  &kp M         &kp Q              &star_hash        &kp Y            &kp O     &kp U       &comma_ques
-&kp S  &kp N  &kp T  &kp H         &kp V              &kp G             &kp C            &kp A     &kp E       &kp I
-&kp F  &kp B  &kp K  &kp L         &kp J              &kp Z             &kp W            &kp SQT   &dash_at    &dot_exc
+&kp X  &kp P  &kp D  &kp M         &kp Q              &dash_at     &kp Y            &kp O       &kp U      &comma_ques
+&kp S  &kp N  &kp T  &kp H         &kp V              &kp G        &kp C            &kp A       &kp E      &kp I
+&kp F  &kp B  &kp K  &kp L         &kp J              &kp Z        &kp W            &apos_star  &quo_hash  &dot_exc
                      &mt LSHIFT R  &lt 1 BACKSPACE    &lt 2 ENTER  &mt RSHFT SPACE
             >;
         };
@@ -129,7 +157,7 @@
         sym_layer {
             bindings = <
 &kp LBRC   &kp RBRC         &kp LPAR            &kp RPAR         &none            &none          &kp N7         &kp N8            &kp N9        &kp RA(W)
-&kp GRAVE  &lh LCTRL MINUS  &lh LEFT_ALT EQUAL  &lh LSHIFT APOS  &none            &kp BACKSLASH  &rh RSHIFT N4  &rh RIGHT_ALT N5  &rh RCTRL N6  &kp RA(L)
+&kp GRAVE  &lh LCTRL MINUS  &lh LEFT_ALT EQUAL  &lh LSHIFT APOS  &kp FSLH         &kp BACKSLASH  &rh RSHIFT N4  &rh RIGHT_ALT N5  &rh RCTRL N6  &kp RA(L)
 &kp LT     &kp GT           &kp LBKT            &kp RBKT         &kp SEMICOLON    &kp N0         &kp N1         &kp N2            &kp N3        &kp RA(Z)
                                                 &trans           &trans           &trans         &trans
             >;

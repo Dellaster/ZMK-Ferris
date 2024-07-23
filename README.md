@@ -1,7 +1,6 @@
-Yet another ZMK Ferris Sweep Bling config I'm testing out. Work in progress. Layout is a version of SNTH with tweaked default symbols: https://www.reddit.com/r/KeyboardLayouts/comments/18jefux/snth/
+Yet another ZMK Ferris Sweep Bling config I'm testing out. Work in progress. Layout is a version of SNTH with tweaked default symbols: https://www.reddit.com/r/KeyboardLayouts/comments/18jefux/snth/ and https://cyanophage.github.io/index.html#snth
 
-![image](https://github.com/user-attachments/assets/a4a4f20c-f6ab-44d4-8021-8000ed8d77c0)
-
+![image](https://github.com/user-attachments/assets/a27593ae-5893-4160-8347-aca4561aa96b)
 
 These two web tools are a great help:
 

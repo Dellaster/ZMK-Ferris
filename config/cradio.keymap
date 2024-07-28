@@ -143,10 +143,10 @@
 
         default_layer {
             bindings = <
-&kp J  &kp G  &kp M  &kp P         &kp V              &kp SEMICOLON  &dot_hash        &fslash_plus  &quo_ques  &apos_excl
-&kp R  &kp S  &kp N  &kp D         &kp W              &comma_amp     &kp A            &kp E         &kp I      &kp H
-&kp X  &kp F  &kp L  &kp C         &kp B              &kp MINUS      &kp U            &kp O         &kp Y      &kp K
-                     &mt LSHIFT T  &lt 1 BACKSPACE    &lt 2 ENTER    &mt RSHFT SPACE
+&kp X  &kp W  &kp M  &kp G         &quo_ques          &kp SEMICOLON  &dot_hash        &apos_excl  &kp J  &kp B
+&kp S  &kp C  &kp N  &kp T         &kp K              &comma_amp     &kp A            &kp E       &kp I  &kp H
+&kp V  &kp P  &kp L  &kp D         &fslash_plus       &kp MINUS      &kp U            &kp O       &kp Y  &kp F
+                     &mt LSHIFT R  &lt 1 BACKSPACE    &lt 2 ENTER    &mt RSHFT SPACE
             >;
         };
 

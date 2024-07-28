@@ -1,6 +1,8 @@
-Yet another ZMK Ferris Sweep Bling config I'm testing out. Work in progress. Layout is a version of SNTH with tweaked default symbols: https://www.reddit.com/r/KeyboardLayouts/comments/18jefux/snth/ and https://cyanophage.github.io/index.html#snth
+Yet another ZMK Ferris Sweep Bling config I'm testing out. Work in progress. Layout is Hands Down Vibranium-v with slight symbol alterations to my taste. https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu
 
-![image](https://github.com/user-attachments/assets/a27593ae-5893-4160-8347-aca4561aa96b)
+Alpha layer is finished; layers 1-3 are a mess.
+
+![image](https://github.com/user-attachments/assets/c1220b01-509e-4702-b159-756b1102d947)
 
 These two web tools are a great help:
 

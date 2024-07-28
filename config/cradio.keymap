@@ -10,8 +10,13 @@
 #include <dt-bindings/zmk/outputs.h>
 
 &mt {
-    tapping-term-ms = <175>;
-    quick_tap_ms = <150>;
+    tapping-term-ms = <275>;
+    quick_tap_ms = <200>;
+};
+
+&lt {
+    tapping-term-ms = <275>;
+    quick_tap_ms = <200>;
 };
 
 / {
@@ -50,55 +55,46 @@
             hold-trigger-key-positions = <0 1 2 3 4>;
         };
 
-        star_hash: star_hash {
+        dot_hash: dot_hash {
             compatible = "zmk,behavior-mod-morph";
-            label = "STAR_HASH";
-            bindings = <&kp ASTERISK>, <&kp HASH>;
+            label = "DOT_HASH";
+            bindings = <&kp PERIOD>, <&kp HASH>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        dot_exc: dot_exc {
+        comma_amp: comma_amp {
             compatible = "zmk,behavior-mod-morph";
-            label = "DOT_EXC";
-            bindings = <&kp PERIOD>, <&kp EXCLAMATION>;
+            label = "COMMA_AMP";
+            bindings = <&kp COMMA>, <&kp AT_SIGN>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        comma_ques: comma_ques {
+        apos_excl: apos_excl {
             compatible = "zmk,behavior-mod-morph";
-            label = "COMMA_QUES";
-            bindings = <&kp COMMA>, <&kp QUESTION>;
+            label = "APOS_EXCL";
+            bindings = <&kp SQT>, <&kp EXCLAMATION>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        dash_at: dash_at {
+        quo_ques: quo_ques {
             compatible = "zmk,behavior-mod-morph";
-            label = "DASH_AT";
-            bindings = <&kp MINUS>, <&kp AT_SIGN>;
+            label = "QUO_QUES";
+            bindings = <&kp DOUBLE_QUOTES>, <&kp QUESTION>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        apos_star: apos_star {
+        fslash_plus: fslash_plus {
             compatible = "zmk,behavior-mod-morph";
-            label = "APOS_STAR";
-            bindings = <&kp SQT>, <&kp ASTERISK>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        quo_hash: quo_hash {
-            compatible = "zmk,behavior-mod-morph";
-            label = "QUO_HASH";
-            bindings = <&kp DOUBLE_QUOTES>, <&kp HASH>;
+            label = "FSLASH_PLUS";
+            bindings = <&kp SLASH>, <&kp PLUS>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -117,24 +113,28 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_escape {
-            bindings = <&kp ESCAPE>;
-            key-positions = <1 0>;
-        };
-
-        combo_bootleft {
-            bindings = <&bootloader>;
-            key-positions = <3 4>;
-        };
-
-        combo_bootright {
-            bindings = <&bootloader>;
-            key-positions = <5 6>;
-        };
-
         combo_capsword {
             bindings = <&caps_word>;
             key-positions = <30 33>;
+            layers = <0>;
+        };
+
+        combo_z {
+            bindings = <&kp Z>;
+            key-positions = <1 0>;
+            layers = <0>;
+        };
+
+        combo_q {
+            bindings = <&kp Q>;
+            key-positions = <1 2>;
+            layers = <0>;
+        };
+
+        combo_esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <10 0>;
+            layers = <1 2>;
         };
     };
 
@@ -143,10 +143,10 @@
 
         default_layer {
             bindings = <
-&kp X  &kp P  &kp D  &kp M         &kp Q              &dash_at     &kp Y            &kp O       &kp U      &comma_ques
-&kp S  &kp N  &kp T  &kp H         &kp V              &kp G        &kp C            &kp A       &kp E      &kp I
-&kp F  &kp B  &kp K  &kp L         &kp J              &kp Z        &kp W            &apos_star  &quo_hash  &dot_exc
-                     &mt LSHIFT R  &lt 1 BACKSPACE    &lt 2 ENTER  &mt RSHFT SPACE
+&kp J  &kp G  &kp M  &kp P         &kp V              &kp SEMICOLON  &dot_hash        &fslash_plus  &quo_ques  &apos_excl
+&kp R  &kp S  &kp N  &kp D         &kp W              &comma_amp     &kp A            &kp E         &kp I      &kp H
+&kp X  &kp F  &kp L  &kp C         &kp B              &kp MINUS      &kp U            &kp O         &kp Y      &kp K
+                     &mt LSHIFT T  &lt 1 BACKSPACE    &lt 2 ENTER    &mt RSHFT SPACE
             >;
         };
 

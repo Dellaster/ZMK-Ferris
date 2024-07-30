@@ -180,5 +180,14 @@
                                                              &trans                &trans          &trans          &trans
             >;
         };
+
+        mouse_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &mkp MB1  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans  &trans  &trans
+                        &trans  &trans    &trans  &trans
+            >;
+        };
     };
 };

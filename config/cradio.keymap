@@ -4,24 +4,12 @@
  * SPDX-License-Identifier: MIT
  */
 
-#define ZMK_MOUSE_DEFAULT_MOVE_VAL 2500  // 600
-#define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define MOUSE 4
-#define U_MS_U &mmv MOVE_UP
-#define U_MS_D &mmv MOVE_DOWN
-#define U_MS_L &mmv MOVE_LEFT
-#define U_MS_R &mmv MOVE_RIGHT
-#define U_WH_U &msc SCRL_UP
-#define U_WH_D &msc SCRL_DOWN
-#define U_WH_L &msc SCRL_LEFT
-#define U_WH_R &msc SCRL_RIGHT
 
 &mt {
     tapping-term-ms = <275>;
@@ -68,19 +56,6 @@
 
             hold-trigger-key-positions = <0 1 2 3 4>;
         };
-
-        mmv {
-            acceleration-exponent = <1>;      // 1
-            time-to-max-speed-ms = <300>;    // 40
-            delay-ms = <0>;                   // 0
-        };
-
-        msc {
-            acceleration-exponent = <0>;      // 0
-            time-to-max-speed-ms = <40>;      // 500
-            delay-ms = <0>;                   // 10
-        };
-
 
         dot_hash: dot_hash {
             compatible = "zmk,behavior-mod-morph";
@@ -203,14 +178,5 @@
                                                              &trans                &trans          &trans          &trans
             >;
         };
-
-//        mouse_layer {
-//            bindings = <
-// &tog 4  &mkp MB4  &mkp MCLK  &mkp MB5   &trans        &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &tog 4
-// &trans  &trans    &trans     &trans     &trans        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
-// &trans  &trans    &trans     &trans     &trans        &trans          &mkp MB4        &mkp MCLK     &mkp MB5         &trans
-//                             &kp SPACE  &kp LSHIFT    &mkp LCLK       &mkp RCLK
-//            >;
-//        };
     };
 };

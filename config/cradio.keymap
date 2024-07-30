@@ -69,6 +69,19 @@
             hold-trigger-key-positions = <0 1 2 3 4>;
         };
 
+        mmv {
+            acceleration-exponent = <1>;      // 1
+            time-to-max-speed-ms = <300>;    // 40
+            delay-ms = <0>;                   // 0
+        };
+
+        msc {
+            acceleration-exponent = <0>;      // 0
+            time-to-max-speed-ms = <40>;      // 500
+            delay-ms = <0>;                   // 10
+        };
+
+
         dot_hash: dot_hash {
             compatible = "zmk,behavior-mod-morph";
             label = "DOT_HASH";
